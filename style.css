@@ -460,6 +460,20 @@ h3 {
   border-radius: 8px;
   background: white;
   cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.custom-page .beads button:hover {
+  transform: translateY(-6px) scale(1.06);
+  border-color: #CB0E5D;
+  box-shadow: 0 8px 20px rgba(203, 14, 93, 0.2);
+}
+
+.custom-page .beads button:active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 3px 8px rgba(203, 14, 93, 0.15);
 }
 
 .custom-page .beads img {
@@ -552,11 +566,21 @@ h3 {
   font-weight: 700;
   cursor: pointer;
   margin-top: 20px !important;
+  transition: background-color 0.3s ease,
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
 }
 
 .custom-page .cart-button:hover {
   background-color: #000066;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 102, 0.25);
+}
+
+.custom-page .cart-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 102, 0.2);
+  background-color: #000044;
 }
 
 
