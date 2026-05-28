@@ -1,82 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Profile Page</title>
 
-    <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<!-- Montserrat Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- Remix Icon -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+		<!-- Remix Icon -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 
-    <link rel="stylesheet" href="profiledummy.css">
-</head>
+		<link
+			rel="stylesheet"
+			href="profiledummy.css"
+		/>
+	</head>
 
-<body>
+	<body>
+		<div class="container">
+			<!-- TOP SECTION -->
+			<div class="top-section">
+				<!-- Logo -->
+				<div class="center">
+					<a href="index.html">
+						<img
+							src="assets/pearlyii_logo_banner.png"
+							alt="LOGO"
+							title="Pearlyii_"
+					/></a>
+				</div>
 
-    <div class="container">
+				<!-- Icons -->
+				<div class="icons">
+					<span>
+						<img
+							src="assets/Settings.png"
+							alt="settings icon"
+							title="settings"
+						/>
+					</span>
+					<span>
+						<img
+							src="assets/heart_icon.png"
+							alt="heart_icon"
+							title="favorites"
+						/>
+					</span>
+					<span>
+						<img
+							src="assets/cart_icon.png"
+							alt=""
+							title="cart"
+						/>
+					</span>
+				</div>
+			</div>
+			<!-- PROFILE CONTENT -->
+			<div class="profile-content">
 
-        <!-- TOP SECTION -->
-        <div class="top-section">
+				<!-- LEFT SIDE -->
+				<div class="left-side">
+					<img
+						src="ASSETS/Yena_pfp.png"
+						alt="Profile"
+						class="profile-img"
+					/>
 
-            <!-- Logo -->
-            <div class="center">
-                <a href="index.html"><img src="assets/pearlyii_logo_banner.png" alt="LOGO" title="Pearlyii_"></a>
-            </div>
+					<button class="edit-btn">Edit</button>
+				</div>
 
+				<!-- RIGHT SIDE -->
+				<div class="right-side">
+					<div class="input-group">
+						<label>Full Name</label>
+						<input
+							type="text"
+							value="Choi Ye-na"
+							readonly
+						/>
+					</div>
 
-            <!-- Icons -->
-            <div class="icons">
-                <span><img src="assets/Settings.png" alt="settings icon" title="settings"></span>
-                <span><img src="assets/heart_icon.png" alt="heart_icon" title="favorites"></span>
-                <span><img src="assets/cart_icon.png" alt="" title="cart"></span>
-                
-            </div>
+					<div class="input-group">
+						<label>Date of Birth</label>
+						<input
+							type="text"
+							value="September 29th, 1999"
+							readonly
+						/>
+					</div>
 
-        <!-- PROFILE CONTENT -->
-        <div class="profile-content">
+					<div class="input-group">
+						<label>Email</label>
+						<input
+							type="email"
+							value="choi_yena@gmail.com"
+							readonly
+						/>
+					</div>
 
-            <!-- LEFT SIDE -->
-            <div class="left-side">
-
-                <img src="ASSETS/Yena_pfp.png" alt="Profile" class="profile-img">
-
-                <button class="edit-btn">Edit</button>
-
-            </div>
-
-            <!-- RIGHT SIDE -->
-            <div class="right-side">
-
-                <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" value="Choi Ye-na" readonly>
-                </div>
-
-                <div class="input-group">
-                    <label>Date of Birth</label>
-                    <input type="text" value="September 29th, 1999" readonly>
-                </div>
-
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" value="choi_yena@gmail.com" readonly>
-                </div>
-
-                <div class="input-group">
-                    <label>Phone</label>
-                    <input type="text" value="0547-5495-0504" readonly>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</body>
+					<div class="input-group">
+						<label>Phone</label>
+						<input
+							type="text"
+							value="0547-5495-0504"
+							readonly
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

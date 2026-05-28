@@ -1,183 +1,189 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: #FFFFFF; padding: 40px;
+	background-color: #ffffff;
+	padding: 40px;
 }
 
 /* MAIN CONTAINER */
 .container {
-    width: 100%;
-    min-height: 100vh;
+	width: 100%;
+	min-height: 100vh;
 
-    background-color: #FFFFFF;
+	background-color: #ffffff;
 
-    padding: 0px 30px;
+	padding: 0px 30px;
+}
+
+.center {
+    /* display: flex; */
+    justify-self: center;
+	/* justify-content: center; */
+    width: fit-content;
 }
 
 /* TOP SECTION */
 .top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	/* display: flex; */
+	/* justify-content: center; */
+	width: 100%;
+	justify-self: center;
+	align-items: center;
 
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .logo {
-    width: 210px;
-    margin: auto;
+	width: 210px;
+	margin: auto;
 }
 
 .icons {
-    display: flex;
-    gap: 20px;
-
-    font-size: 35px;
-    color: #000066;
+	display: flex;
+	gap: 20px;
+	justify-self: flex-end;
+	font-size: 35px;
+	color: #000066;
 }
 
 .icons i {
-    cursor: pointer;
-    transition: 0.3s;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 .icons i:hover {
-    color: #CB0E5D;
+	color: #cb0e5d;
 }
 
 /* PROFILE CONTENT */
 .profile-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 150px;
 }
 
 /* LEFT SIDE */
 .left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .profile-img {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 30px;
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 30px;
 }
 
 .edit-btn {
-    width: 120px;
-    height: 45px;
+	width: 120px;
+	height: 45px;
 
-    border: none;
-    border-radius: 5px;
+	border: none;
+	border-radius: 5px;
 
-    background-color: #CB0E5D;
-    color: #FFFFFF;
+	background-color: #cb0e5d;
+	color: #ffffff;
 
-    font-size: 18px;
-    font-weight: 700;
+	font-size: 18px;
+	font-weight: 700;
 
-    cursor: pointer;
+	cursor: pointer;
 
-    transition: 0.3s;
+	transition: 0.3s;
 }
 
 .edit-btn:hover {
-    opacity: 0.5;
-    background-color: #000066;
+	opacity: 0.5;
+	background-color: #000066;
 }
 
 /* RIGHT SIDE */
 .right-side {
-    width: 420px;
+	width: 420px;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .input-group label {
-    color: #000066;
-    font-size: 22px;
-    font-weight: 500;
-
-    margin-bottom: 10px;
+	color: #000066;
+	font-size: 22px;
+	font-weight: 500;
+    
+	margin-bottom: 10px;
 }
 
 .input-group input {
-    width: 100%;
-    height: 55px;
+	width: 100%;
+	height: 55px;
 
-    border: 2px solid #CB0E5D;
-    border-radius: 5px;
+	border: 2px solid #cb0e5d;
+    background: #FFDEEB; /* ganti sesuai hex(erei) code nya */
+	border-radius: 5px;
 
-    padding: 0 15px;
+	padding: 0 15px;
 
-    font-size: 17px;
-    color: #000066;
+	font-size: 17px;
+	color: #000066;
 
-    outline: none;
+	outline: none;
 }
 
 /* RESPONSIVE */
 @media (max-width: 1000px) {
+	.profile-content {
+		flex-direction: column;
+		gap: 60px;
+	}
 
-    .profile-content {
-        flex-direction: column;
-        gap: 60px;
-    }
-
-    .right-side {
-        width: 100%;
-        max-width: 500px;
-    }
-
+	.right-side {
+		width: 100%;
+		max-width: 500px;
+	}
 }
 
 @media (max-width: 768px) {
+	body {
+		padding: 20px;
+	}
 
-    body {
-        padding: 20px;
-    }
+	.container {
+		padding: 70px 25px;
+	}
 
-    .container {
-        padding: 70px 25px;
-    }
+	.top-section {
+		flex-direction: column;
+		gap: 30px;
+	}
 
-    .top-section {
-        flex-direction: column;
-        gap: 30px;
-    }
+	.logo {
+		width: 180px;
+	}
 
-    .logo {
-        width: 180px;
-    }
+	.profile-img {
+		width: 180px;
+		height: 180px;
+	}
 
-    .profile-img {
-        width: 180px;
-        height: 180px;
-    }
+	.icons {
+		font-size: 30px;
+		gap: 20px;
+	}
 
-    .icons {
-        font-size: 30px;
-        gap: 20px;
-    }
-
-    .input-group label {
-        font-size: 18px;
-    }
-
+	.input-group label {
+		font-size: 18px;
+	}
 }
