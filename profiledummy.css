@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF; padding: 40px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #FFFFFF;
+
+    padding: 0px 30px;
+}
+
+/* TOP SECTION */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 210px;
+    margin: auto;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+
+    font-size: 35px;
+    color: #000066;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #CB0E5D;
+}
+
+/* PROFILE CONTENT */
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* LEFT SIDE */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.profile-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.edit-btn {
+    width: 120px;
+    height: 45px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #CB0E5D;
+    color: #FFFFFF;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    opacity: 0.5;
+    background-color: #000066;
+}
+
+/* RIGHT SIDE */
+.right-side {
+    width: 420px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    color: #000066;
+    font-size: 22px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 55px;
+
+    border: 2px solid #CB0E5D;
+    border-radius: 5px;
+
+    padding: 0 15px;
+
+    font-size: 17px;
+    color: #000066;
+
+    outline: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+
+    .profile-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .right-side {
+        width: 100%;
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 70px 25px;
+    }
+
+    .top-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .icons {
+        font-size: 30px;
+        gap: 20px;
+    }
+
+    .input-group label {
+        font-size: 18px;
+    }
+
+}
