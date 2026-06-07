@@ -161,13 +161,6 @@ right img {
     display: inline-block;
 }
 
-/* SERIES DROPDOWN*/
-
-.dropdown_series {
-    position: relative;
-    display: inline-block;
-}
-
 /* ===== DROPDOWN MENU ===== */
 
 .dropdown_series_content {
