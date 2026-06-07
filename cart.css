@@ -161,6 +161,53 @@ right img {
     display: inline-block;
 }
 
+/* SERIES DROPDOWN*/
+
+.dropdown_series {
+    position: relative;
+    display: inline-block;
+}
+
+/* ===== DROPDOWN MENU ===== */
+
+.dropdown_series_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-15%);
+    min-width: 150px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+/* ===== SHOW ON HOVER ===== */
+
+.dropdown_series:hover .dropdown_series_content { 
+    display: block;
+}
+
+/* DROPDOWN SERIES ITEMS */
+
+.dropdown_series_content a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #000066;
+    font-weight: 700;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+/* ===== HOVER PRODUCT ===== */
+
+.dropdown_series_content a:hover {
+    background-color: #CB0E5D;
+    color: white;
+}
 
 /*body*/
 h1 {
