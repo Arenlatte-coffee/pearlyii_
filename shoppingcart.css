@@ -233,14 +233,15 @@ a {
   border-radius: 50%;
   background: var(--white);
   position: relative;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.25s var(--ease-spring),
+    box-shadow 0.3s ease;
 }
 
-.cart-check input:checked + span {
-  border-color: var(--pink);
-  background: var(--pink);
-}
-
-.cart-check input:checked + span::after {
+.cart-check span::after {
   content: "";
   position: absolute;
   left: 8px;
@@ -249,7 +250,20 @@ a {
   height: 13px;
   border: solid var(--white);
   border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.25s var(--ease-spring);
+}
+
+.cart-check input:checked + span {
+  border-color: var(--pink);
+  background: var(--pink);
+  box-shadow: 0 2px 8px rgba(203, 14, 93, 0.3);
+  transform: scale(1.1);
+}
+
+.cart-check input:checked + span::after {
+  transform: rotate(45deg) scale(1);
 }
 
 .product-image {
@@ -352,6 +366,7 @@ a {
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0;
+  
   transition:
     background-color 0.3s ease,
     transform 0.25s var(--ease-spring),
