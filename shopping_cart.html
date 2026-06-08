@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Pearlyii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="shoppingcart.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="left">
+          <a href="#">ID </a>
+          <span class="divider"></span>
+          <a href="#"><strong>EN</strong></a>
+        </div>
+
+        <div class="center">
+          <a href="index.html"><img src="assets/pearlyii_logo_banner.png" alt="LOGO" title="Pearlyii_" /></a>
+        </div>
+
+        <div class="right">
+          <span><img src="assets/search_icon.png" alt="search_icon" title="search" /></span>
+          <span><a href="wishlist.html"><img src="assets/heart_icon.png" alt="heart_icon" title="favorites" /></a></span>
+          <span><a href="cart.html"><img src="assets/cart_icon.png" alt="search_icon" title="cart" /></a></span>
+          <span><a href="login.html"><img src="assets/profile_icon.png" alt="search_icon" title="my profile" /></a></span>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="about.html">ABOUT</a>
+
+        <div class="dropdown_product">
+          <a href="#">PRODUCT</a>
+
+          <div class="dropdown_product_content">
+            <a href="bestseller.html">Best Seller</a>
+            <a href="necklace.html">Necklaces</a>
+            <a href="bracelets.html">Bracelets</a>
+            <a href="rings.html">Rings</a>
+            <a href="phonestrap.html">Phonestraps</a>
+          </div>
+        </div>
+
+        <div class="dropdown_series">
+          <a href="#">SERIES</a>
+
+          <div class="dropdown_series_content">
+            <a href="series_valentine.html">Valentine</a>
+            <a href="series_couple.html">Couple</a>
+            <a href="series_besties.html">Besties</a>
+            <a href="product grid.html">NEW</a>
+          </div>
+        </div>
+
+        <a href="custom.html">CUSTOM</a>
+        <a href="contactus.html">CONTACTS</a>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <div class="cart-title-row">
+        <a href="custom.html" class="back-link" aria-label="Back">
+          <img src="assets/ic_twotone-arrow-back.png" alt="" aria-hidden="true" />
+        </a>
+        <h1>Shopping Cart</h1>
+      </div>
+
+      <section class="cart-table" aria-label="Shopping cart items">
+        <div class="cart-table-head">
+          <span></span>
+          <span>ITEMS</span>
+          <span>PRICE</span>
+          <span>QUANTITY</span>
+        </div>
+
+        <article class="cart-item">
+          <label class="cart-check" aria-label="Select Custom Bracelet">
+            <input type="checkbox" checked />
+            <span></span>
+          </label>
+
+          <div class="product-image">
+            <img src="assets/Pearl_Knot_Bracelet.png" alt="Custom Bracelet" />
+          </div>
+
+          <div class="product-info">
+            <h2>Custom Bracelet</h2>
+            <p>Personalized Bracelet</p>
+          </div>
+
+          <p class="product-price">Rp 100.000</p>
+
+          <div class="quantity-control" aria-label="Custom Bracelet quantity">
+            <button type="button">-</button>
+            <span>1</span>
+            <button type="button">+</button>
+          </div>
+        </article>
+
+        <article class="cart-item">
+          <label class="cart-check" aria-label="Select Sunflower Beaded">
+            <input type="checkbox" />
+            <span></span>
+          </label>
+
+          <div class="product-image">
+            <img src="assets/bracelet.png" alt="Sunflower Beaded" />
+          </div>
+
+          <div class="product-info">
+            <h2>Sunflower Beaded</h2>
+            <p>Bracelet</p>
+          </div>
+
+          <p class="product-price">Rp 95.000</p>
+
+          <div class="quantity-control" aria-label="Sunflower Beaded quantity">
+            <button type="button">-</button>
+            <span>1</span>
+            <button type="button">+</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="cart-actions" aria-label="Cart total and checkout">
+        <div class="total-card">
+          <span>Total</span>
+          <strong>Rp 100.000</strong>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </div>
+        <a href="checkout.html" class="checkout-btn">CHECK OUT</a>
+      </section>
+    </main>
+
+    <div class="footer-section">
+      <div class="footer-logo"><img src="assets/pearlyii.png" width="300px" alt="Pearlyii" /></div>
+
+      <div class="footer-center">
+        <h3>Customer Care</h3><br />
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>F.A.Q</p>
+        <p>Terms & Conditions</p>
+      </div>
+
+      <div class="footer-right">
+        <h3>Information</h3><br />
+        <p>Size Chart</p>
+        <p>Jewelry Care</p>
+        <p>Find Us at</p>
+        <p><img src="assets/findus.png" width="100px" alt="Find us on social media" /></p>
+      </div>
+    </div>
+  </body>
+</html>
