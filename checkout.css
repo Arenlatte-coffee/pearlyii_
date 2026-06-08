@@ -523,18 +523,14 @@ body {
   background: var(--white);
 }
 
-/* ============================================================
-   RIGHT COLUMN
-   ============================================================ */
+/*RIGHT COLUMN*/
 .checkout-right {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* ============================================================
-   CARDS (shared)
-   ============================================================ */
+/*CARDS (shared)*/
 .promo-card,
 .summary-card {
   background: var(--white);
@@ -569,9 +565,7 @@ body {
   text-align: left;
 }
 
-/* ============================================================
-   PROMO
-   ============================================================ */
+/*PROMO*/
 .promo-hint {
   font-size: 0.73rem;
   color: var(--text-muted);
@@ -631,9 +625,7 @@ body {
   background: #000044;
 }
 
-/* ============================================================
-   SHIPPING OPTIONS
-   ============================================================ */
+/*SHIPPING OPTIONS*/
 .shipping-options {
   display: flex;
   flex-direction: column;
@@ -759,7 +751,7 @@ body {
 }
 
 .total-row span:last-child {
-  color: var(--pink);
+  color: var(--text-body);
 }
 
 /* CHECKOUT BUTTON */
