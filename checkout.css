@@ -751,7 +751,7 @@ body {
 }
 
 .total-row span:last-child {
-  color: var(--text-body);
+  color: #000066;
 }
 
 /* CHECKOUT BUTTON */
