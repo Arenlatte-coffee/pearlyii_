@@ -29,8 +29,6 @@ body {
 
 /* TOP SECTION */
 .top-section {
-	/* display: flex; */
-	/* justify-content: center; */
 	width: 100%;
 	justify-self: center;
 	align-items: center;
@@ -102,7 +100,6 @@ body {
 }
 
 .edit-btn:hover {
-	opacity: 0.5;
 	background-color: #000066;
 }
 
@@ -131,7 +128,7 @@ body {
 	height: 55px;
 
 	border: 2px solid #cb0e5d;
-    background: #FFDEEB; /* ganti sesuai hex(erei) code nya */
+    background: #FFDEEB;
 	border-radius: 5px;
 
 	padding: 0 15px;
