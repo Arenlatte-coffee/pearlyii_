@@ -87,7 +87,74 @@
   width: 20px;
 }
 
+/* NAVBAR */
+.navbar {
+  margin-top: 30px;
+	display: flex;
+}
 
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000066;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #CB0E5D;
+
+}
+
+/* PRODUCT DROPDOWN */
+
+.dropdown_product {
+    position: relative;
+    display: inline-block;
+}
+
+/* ===== DROPDOWN MENU ===== */
+
+.dropdown_product_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-15%);
+    min-width: 150px;
+    background: rgba(255,255,255,0.75);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    z-index: 1000;
+}
+
+/* ===== SHOW ON HOVER ===== */
+
+.dropdown_product:hover .dropdown_product_content { 
+    display: block;
+}
+
+/* ===== DROPDOWN PRODUCT ITEMS ===== */
+
+.dropdown_product_content a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #000066;
+    font-weight: 700;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+/* ===== HOVER PRODUCT ===== */
+
+.dropdown_product_content a:hover {
+    background-color: #CB0E5D;
+    color: white;
+
+}
 
 /* SERIES DROPDOWN*/
 
@@ -135,6 +202,58 @@
 .dropdown_series_content a:hover {
     background-color: #CB0E5D;
     color: white;
+}
+/*bagian isi*/
+
+.jewcare { grid-area: jewcare; 
+			text-align: left !important; 
+			color: #000066;
+			background-color: white;
+      margin-left: 70px;
+      padding-bottom: 70px;
+		}
+
+.jewcare h1 {
+	font-size: 48px;
+	font-style: bold;
+	font-weight: 800;
+}
+
+.jewcare h3 {
+	font-size: 24px;
+	font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.jewcare p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.jewcare span {
+	text-align: left;
+	padding-left: 50px;
+  font-size: 24px;
+	font-weight: 700;
+}
+
+.side-footer {
+    grid-area: side-footer;
+}
+.side-box {
+    display: inline-block;
+	color: #000066;
+    border: 1px solid #000066;
+    border-radius: 5px;
+    padding: 20px;
+	margin-top: 50px;
+	}
+
+.side-box a:hover {
+  color: #CB0E5D;
+  cursor: pointer;
 }
 
 /*bagian isi*/
