@@ -465,3 +465,203 @@ h3 {
     color: #CB0E5D;
     cursor: pointer;
 }
+/* =========================
+   LAPTOP KECIL / TABLET LANDSCAPE
+========================= */
+@media (max-width: 1024px) {
+
+    .container {
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .sidebar {
+        width: 180px;
+        padding-left: 0;
+    }
+
+    .content {
+        margin-left: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .content h1 {
+        font-size: 42px;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+    }
+
+    .price-row p {
+        font-size: 24px;
+    }
+
+    .footer-section {
+        padding: 50px;
+        gap: 40px;
+    }
+
+    .footer-logo img {
+        width: 220px;
+        height: auto;
+    }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 768px) {
+
+    .topbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .left,
+    .center,
+    .right {
+        flex: unset;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .price-row p {
+        font-size: 24px;
+    }
+
+    .footer-section {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 50px;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        font-size: 14px;
+    }
+
+    .topbar {
+        padding: 10px;
+    }
+
+    .center img {
+        width: 180px;
+        height: auto;
+    }
+
+    .right {
+        gap: 12px;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        margin: 3px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .filter-group button {
+        width: 100%;
+    }
+
+    .custom-btn {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+    }
+
+    .price-row p {
+        font-size: 22px;
+    }
+
+    .price-row span {
+        font-size: 28px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 30px;
+    }
+
+    .footer-logo img {
+        width: 180px;
+    }
+
+}
