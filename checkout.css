@@ -155,7 +155,7 @@ main {
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* BASE */
+/* Base */
 html,
 body {
   width: 100%;
@@ -166,7 +166,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* PAGE WRAPPER — max width, centered, generous padding */
+/* page wrapper */
 .checkout-page {
   max-width: 1600px;
   margin: 0 auto;
@@ -185,7 +185,7 @@ body {
   }
 }
 
-/* HEADER */
+/* header */
 .checkout-header {
   display: flex;
   align-items: center;
@@ -220,7 +220,7 @@ body {
   letter-spacing: -0.5px;
 }
 
-/* MAIN GRID */
+/* Main Grid */
 .checkout-grid {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -228,14 +228,14 @@ body {
   align-items: start;
 }
 
-/* LEFT COLUMN */
+/* Left Column */
 .checkout-left {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-/* ADDRESS CARD */
+/* Address Card */
 .address-card {
   display: flex;
   align-items: flex-start;
@@ -330,7 +330,7 @@ body {
   display: block;
 }
 
-/* ITEMS TABLE */
+/* Items Table */
 .items-section {
   border: 1.5px solid var(--pink);
   border-radius: 10px;
@@ -468,7 +468,7 @@ body {
   text-align: center;
 }
 
-/* Qty — SQUARE matching ref */
+/* Qty */
 .item-qty {
   display: flex;
   align-items: stretch;
@@ -523,14 +523,14 @@ body {
   background: var(--white);
 }
 
-/*RIGHT COLUMN*/
+/*Right Column*/
 .checkout-right {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/*CARDS (shared)*/
+/*Cards*/
 .promo-card,
 .summary-card {
   background: var(--white);
@@ -565,7 +565,7 @@ body {
   text-align: left;
 }
 
-/*PROMO*/
+/* Promo */
 .promo-hint {
   font-size: 0.73rem;
   color: var(--text-muted);
@@ -625,7 +625,7 @@ body {
   background: #000044;
 }
 
-/*SHIPPING OPTIONS*/
+/* Shipping Options */
 .shipping-options {
   display: flex;
   flex-direction: column;
@@ -719,7 +719,7 @@ body {
   color: #000066;
 }
 
-/* SUMMARY ROWS */
+/* Summary Rows */
 .summary-divider {
   height: 1px;
   background: var(--border);
@@ -754,7 +754,7 @@ body {
   color: #000066;
 }
 
-/* CHECKOUT BUTTON */
+/* Checkout Button */
 .checkout-btn {
   width: 100%;
   background: var(--pink);
@@ -776,7 +776,7 @@ body {
   box-shadow: 0 4px 16px rgba(203, 14, 93, 0.28);
 }
 
-/* shimmer */
+/* Shimmer */
 .checkout-btn::before {
   content: "";
   position: absolute;
@@ -805,7 +805,7 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 102, 0.18);
 }
 
-/* footer */
+/* Footer */
 
 .footer-section {
   width: 100%;
@@ -848,7 +848,7 @@ body {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 860px) {
   .checkout-page {
     padding: 36px 28px 140px;
@@ -864,7 +864,7 @@ body {
   .summary-card {
     flex: 1 1 280px;
   }
-  /* FOOTER TABLET */
+  /* Footer Tablet */
   .footer-section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -923,7 +923,7 @@ body {
     flex-direction: column;
   }
   
-  /* HEADER HP */
+  /* Header Hp */
   .topbar {
     padding: 10px 16px;
   }
@@ -942,7 +942,7 @@ body {
     font-size: 13px;
   }
   
-  /* FOOTER HP */
+  /* Footer Hp */
   .footer-section {
     flex-direction: row;
     flex-wrap: wrap;
