@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pearlyii</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* COLOR PALETTE
+
+        Pink Dark      : #CB0E5D
+        Pink Soft      : #FFDEEB
+        Blue Soft      : #C1D2FC
+        Navy           : #000066
+        Purple Soft    : #DABBF2
+        White Cream    : #FEFBFE
+        Cream Accent   : #FFE4BF
+
+       */
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins', sans-serif;
+            background:#FEFBFE;
+        }
+
+        /* HEADER */
+
+        header{
+            width:100%;
+            background:#FEFBFE;
+            border-bottom:1px solid #FFDEEB;
+
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:999;
+        }
+
+        /* TOP HEADER */
+
+        .top-header{
+            width:100%;
+            max-width:1200px;
+
+            margin:auto;
+            padding:15px 40px;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        /* LANGUAGE */
+
+        .language{
+            font-size:14px;
+            font-weight:600;
+            color:#000066;
+        }
+
+        /* LOGO */
+
+        .logo img{
+            width:170px;
+            height:auto;
+            display:block;
+        }
+
+        /* ICON */
+
+        .header-icons{
+            display:flex;
+            align-items:center;
+            gap:22px;
+        }
+
+        .header-icons a{
+            color:#000066;
+            font-size:22px;
+
+            transition:0.3s;
+        }
+
+        .header-icons a:hover{
+            color:#CB0E5D;
+        }
+
+        /* NAVBAR */
+
+        nav{
+            width:100%;
+            border-top:1px solid #FFDEEB;
+        }
+
+        .menu{
+            width:100%;
+            max-width:1200px;
+
+            margin:auto;
+            padding:0;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:45px;
+
+            list-style:none;
+        }
+
+        .menu li a{
+            text-decoration:none;
+            color:#000066;
+
+            font-size:16px;
+            font-weight:700;
+
+            transition:0.3s;
+        }
+
+        .menu li a:hover{
+            color:#CB0E5D;
+        }
+
+        /* HERO SECTION */
+
+        .hero{
+            padding:245px 56px 28px;
+        }
+
+        /* TITLE */
+
+        .hero-title{
+            color:#000066;
+
+            font-size:51px;
+            font-weight:800;
+
+            line-height:1.1;
+
+            margin-bottom:5px;
+        }
+
+        /* SUBTITLE */
+
+        .hero-subtitle{
+            color:#CB0E5D;
+
+            font-size:17px;
+            font-style:italic;
+            font-weight:600;
+
+            margin-bottom:13px;
+        }
+
+        /* TAG */
+
+        .hero-tags{
+            display:flex;
+            gap:9px;
+        }
+
+        .hero-tags span{
+            background:#C1D2FC;
+            color:#000066;
+
+            padding:3px 10px;
+
+            border-radius:5px;
+
+            font-size:15px;
+            font-weight:700;
+        }
+
+        /* ARTICLE SECTION */
+
+        .article-section{
+            width:100%;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:stretch;
+
+            gap:50px;
+
+            padding:30px 56px 32px;
+        }
+
+        /* LEFT TEXT */
+
+        .article-text{
+            width:42%;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+
+        .article-text p{
+            color:#000066;
+
+            font-size:16px;
+            line-height:1.8;
+
+            font-weight:500;
+
+            text-align:justify;
+        }
+
+        /* RIGHT IMAGE */
+
+        .article-image{
+            width:58%;
+        }
+
+        .article-image img{
+            width:100%;
+            height:100%;
+
+            object-fit:cover;
+
+            display:block;
+        }
+
+        /* FULL TEXT SECTION */
+
+        .full-text{
+            width:100%;
+
+            padding:0 56px 32px;
+        }
+
+        .full-text p{
+            color:#000066;
+
+            font-size:16px;
+            line-height:1.8;
+
+            font-weight:500;
+
+            text-align:justify;
+
+            margin-bottom:26px;
+        }
+
+        /* SUBSCRIBE SECTION */
+
+        .subscribe-section{
+            width:100%;
+
+            display:flex;
+            align-items:flex-start;
+            gap:45px;
+
+            padding:0 56px 80px;
+        }
+
+        /* IMAGE */
+
+        .subscribe-image{
+            width:34%;
+        }
+
+        .subscribe-image img{
+            width:100%;
+            height:100%;
+
+            object-fit:cover;
+            display:block;
+        }
+
+        /* CONTENT */
+
+        .subscribe-content{
+            width:66%;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+
+        .subscribe-content p{
+            color:#000066;
+
+            font-size:16px;
+            line-height:1.8;
+
+            font-weight:500;
+
+            margin-bottom:18px;
+        }
+
+        .subscribe-content h2{
+            color:#000066;
+
+            font-size:32px;
+            font-weight:700;
+
+            margin-top:8px;
+            margin-bottom:18px;
+        }
+
+        /* FORM */
+
+        .subscribe-form{
+            display:flex;
+            align-items:center;
+            gap:15px;
+
+            margin-bottom:18px;
+        }
+
+        .subscribe-form input{
+            width:350px;
+
+            padding:14px 18px;
+
+            border:none;
+            border-radius:5px;
+
+            background:#FFDEEB;
+
+            font-family:'Poppins', sans-serif;
+            font-size:14px;
+
+            color:#000066;
+
+            outline:none;
+        }
+
+        .subscribe-form input::placeholder{
+            color:#7a7aa8;
+        }
+
+        .subscribe-form button{
+            padding:14px 28px;
+            border:none;
+            border-radius:5px;
+            background:#CB0E5D;
+            color:#FEFBFE;
+            font-family:'Poppins', sans-serif;
+            font-size:16px;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .subscribe-form button:hover{
+            background:#000066;
+            color:#FEFBFE;
+        }
+
+        /* LINK */
+
+        .see-all{
+            color:#CB0E5D;
+
+            text-decoration:none;
+
+            font-size:26px;
+            font-weight:500;
+
+            transition:0.3s;
+        }
+
+        .see-all:hover{
+            opacity:0.7;
+        }
+
+        /* RESPONSIVE */
+
+        @media screen and (max-width:768px){
+
+            .subscribe-section{
+                flex-direction:column;
+                padding:0 20px 60px;
+            }
+
+            .subscribe-image,
+            .subscribe-content{
+                width:100%;
+            }
+
+            .subscribe-content h2{
+                font-size:26px;
+            }
+
+            .subscribe-form{
+                flex-direction:column;
+                align-items:flex-start;
+            }
+
+            .subscribe-form input{
+                width:100%;
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media screen and (max-width:768px){
+
+            .article-section{
+                flex-direction:column;
+                padding:25px 20px 40px;
+            }
+
+            .article-text{
+                width:100%;
+            }
+
+            .article-image{
+                width:100%;
+            }
+
+            .article-text p{
+                font-size:18px;
+            }
+
+        }
+
+        /* RESPONSIVE */
+
+        @media screen and (max-width:768px){
+
+            .top-header{
+                padding:8px 40px;
+            }
+
+            .logo img{
+                width:95px;
+            }
+
+            .header-icons{
+                gap:15px;
+            }
+
+            .header-icons a{
+                font-size:18px;
+            }
+
+            .menu{
+                gap:20px;
+                padding:15px 20px;
+
+                flex-wrap:wrap;
+            }
+
+            .menu li a{
+                font-size:13px;
+            }
+
+            .dummy-content{
+                margin-top:190px;
+                padding:30px 20px;
+            }
+
+            .dummy-content h1{
+                font-size:32px;
+                line-height:1.3;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="top-header">
+
+            <div class="language">
+                ID | EN
+            </div>
+
+            <div class="logo">
+                <img src="logonew.png" alt="Pearlyii Logo">
+            </div>
+
+            <div class="header-icons">
+
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul class="menu">
+
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">SERIES</a></li>
+                <li><a href="#">CUSTOM</a></li>
+                <li><a href="#">CONTACTS</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1 class="hero-title">
+            Mix & Match Your Beads
+        </h1>
+
+        <h2 class="hero-subtitle">
+            This for your daily fit! Recommendation Mix & Match Beads
+        </h2>
+
+        <div class="hero-tags">
+
+            <span>Beads</span>
+            <span>Bracelet</span>
+            <span>Necklace</span>
+
+        </div>
+
+    </section>
+
+    <!-- Article -->
+
+    <section class="article-section">
+
+        <div class="article-text">
+
+            <p>
+                Who says accessories have to be uniform? At Pearlyii,
+                you are free to mix colorful beads according to your
+                mood and daily style. From soft pastels to striking bold
+                colors, each combination creates a unique story of your own.
+            </p>
+
+            <p>
+                For your daily fit, comfort and versatility are key.
+                If you’re looking for something easy to wear every day,
+                opt for acrylic beads or seed beads. These are lightweight,
+                colorful, and perfect for casual styling.
+            </p>
+
+            <p>
+                If your accessories are often exposed to water,
+                choosing the right material becomes important.
+                Glass beads and high-quality acrylic beads are generally
+                more durable and resistant to fading.
+            </p>
+
+        </div>
+
+        <div class="article-image">
+            <img src="beads.jpeg" alt="Beads">
+        </div>
+
+    </section>
+
+    <!-- Full Text -->
+
+    <section class="full-text">
+
+        <p>
+            For a more polished and elegant look, pearl beads and glossy
+            finished beads are the perfect choice. Their natural shine adds
+            a subtle glow, making your accessories look more refined.
+        </p>
+
+        <p>
+            If you enjoy statement pieces, try mixing textured beads such as
+            woven beads, charm details, or layered bead clusters.
+            These combinations create depth and visual interest,
+            turning your accessories into standout pieces.
+        </p>
+
+    </section>
+
+    <!-- Subscribe -->
+
+    <section class="subscribe-section">
+
+        <div class="subscribe-image">
+            <img src="beads-box.jpeg" alt="Beads Box">
+        </div>
+
+        <div class="subscribe-content">
+
+            <p>
+                Another signature detail is the handcrafted feel.
+                Elements like beaded bows and clustered mini flowers
+                show that these are not just assembled,
+                but thoughtfully designed.
+            </p>
+
+            <p>
+                At Pearlyii, mix and match beads are designed to suit
+                your lifestyle. Whether you prefer something simple
+                for daily wear or elegant for special moments,
+                there’s always a combination that fits you perfectly.
+            </p>
+
+            <h2>
+                Subscribe to Pearlyii Articles
+            </h2>
+
+            <div class="subscribe-form">
+
+                <input type="email" placeholder="Your Email Here">
+
+                <button>
+                    Send
+                </button>
+
+            </div>
+
+            <a href="articleletter.html" class="see-all">
+                See All Articles →
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
