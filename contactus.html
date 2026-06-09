@@ -34,15 +34,13 @@
   font-size: 18px;
 }
 
-.topbar {
+.topbar { 
   display: flex;
   align-items: center;
   padding: 10px 30px;
 }
 
-.left,
-.center,
-.right {
+.left, .center, .right {
   flex: 1;
 }
 
@@ -54,9 +52,8 @@
   gap: 10px;
   text-decoration: none;
 }
-
 .left a:hover {
-  color: #CB0E5D;
+  color:#CB0E5D;
   text-decoration: none;
 }
 
@@ -71,7 +68,6 @@
   display: flex;
   justify-content: center;
 }
-
 .center img {
   height: auto;
   justify-content: center;
@@ -84,7 +80,7 @@
   gap: 20px;
 }
 
-right img {
+.right img {
   width: 20px;
 }
 
@@ -102,6 +98,106 @@ right img {
 
 .navbar a:hover {
   color: #CB0E5D;
+
+}
+
+/* PRODUCT DROPDOWN */
+
+.dropdown_product {
+    position: relative;
+    display: inline-block;
+}
+
+/* ===== DROPDOWN MENU ===== */
+
+.dropdown_product_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-15%);
+    min-width: 150px;
+    background: rgba(255,255,255,0.75);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    z-index: 1000;
+}
+
+/* ===== SHOW ON HOVER ===== */
+
+.dropdown_product:hover .dropdown_product_content { 
+    display: block;
+}
+
+/* ===== DROPDOWN PRODUCT ITEMS ===== */
+
+.dropdown_product_content a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #000066;
+    font-weight: 700;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+/* ===== HOVER PRODUCT ===== */
+
+.dropdown_product_content a:hover {
+    background-color: #CB0E5D;
+    color: white;
+
+}
+
+/* SERIES DROPDOWN*/
+
+.dropdown_series {
+    position: relative;
+    display: inline-block;
+}
+
+/* ===== DROPDOWN MENU ===== */
+
+.dropdown_series_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-15%);
+    min-width: 150px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+/* ===== SHOW ON HOVER ===== */
+
+.dropdown_series:hover .dropdown_series_content { 
+    display: block;
+}
+
+/* DROPDOWN SERIES ITEMS */
+
+.dropdown_series_content a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #000066;
+    font-weight: 700;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+/* ===== HOVER PRODUCT ===== */
+
+.dropdown_series_content a:hover {
+    background-color: #CB0E5D;
+    color: white;
 }
 
 /*bagian isi*/ 
@@ -284,7 +380,7 @@ a:active {
         <a href="series_valentine.html">Valentine</a>
         <a href="series_couple.html">Couple</a>
         <a href="series_besties.html">Besties</a>
-        <a href="product grid.html">NEW</a>
+        <a href="product-grid.html">NEW</a>
 
      </div>
 
