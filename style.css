@@ -258,14 +258,17 @@ h1 {
 	display: flex;
 	align-items: center;
 	position: relative;
+	justify-content: center;
+	gap: 30px;
 }
 
 .product-card {
 	position: relative;
+	flex: 1;
 }
 
 .product-card img {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	inset: 0;
 	object-fit: cover;
@@ -273,9 +276,9 @@ h1 {
 }
 
 .product-card-img {
-	position: relative;
+	position: absolute;
 	width: 100%;
-	height: 380px;	
+	height: 380px;
 }
 
 .img-hover {
@@ -701,7 +704,7 @@ button:hover {
     cursor: pointer;
 }
 
-media (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     h1,h2 {
         font-size: 40px;
