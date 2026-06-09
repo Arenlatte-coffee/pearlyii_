@@ -216,7 +216,7 @@ body {
 .checkout-title {
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 800;
-  color: var(--navy);
+  color: #000066;
   letter-spacing: -0.5px;
 }
 
