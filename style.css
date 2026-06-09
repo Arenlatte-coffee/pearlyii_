@@ -678,4 +678,164 @@ h3 {
     cursor: pointer;
 }
 
+media (max-width: 1024px) {
+
+    h1,h2 {
+        font-size: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .column-two {
+        padding-top: 0;
+    }
+
+    .footer-section {
+        padding: 50px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .header {
+        font-size: 14px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .center img {
+        width: 180px;
+        height: auto;
+    }
+
+    .right {
+        gap: 12px;
+    }
+
+    .right img {
+        width: 18px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 15px;
+    }
+
+    .navbar a {
+        margin: 3px;
+        font-size: 13px;
+    }
+
+    /* SECTION 2 TITLE */
+    h1 {
+        font-size: 32px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    /* GRID 3 GAMBAR */
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    /* SECTION 3 */
+    .container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .column-one,
+    .column-two {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container button {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* FOOTER */
+    .tagline-section {
+        padding: 80px 20px;
+    }
+
+    .tagline {
+        font-size: 22px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 25px;
+    }
+
+    .footer-logo img {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .center img {
+        width: 150px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+}
+
 /*made with love, from pearlyii_ team.*/
