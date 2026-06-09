@@ -660,7 +660,7 @@ button:hover {
 	font-size: 16px; 
 }
 
-.footer-center h3, .footer-right h3 {
+.footer-center h1, .footer-right h1 {
     font-size: 24px !important;
     font-weight: 700;
     margin-bottom: 15px;
