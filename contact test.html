@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>CONTACT US</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-template-areas:
+	'logo logo logo logo logo'
+	'left left left right right'
+    'telp telp telp telp telp'
+    'data data data data data'
+	'footer-logo footer-logo footer-center footer-right footer-right'
+	}
+	
+.container > div {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+/*bagian header*/
+	
+.header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+}
+
+/* id/en kiri */
+.left {
+  display: flex;
+  align-items: center;
+  color: #000066;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.left a:hover {
+  color: #CB0E5D;
+  text-decoration: none;
+}
+
+.divider {
+  width: 1px;
+  height: 14px;
+  background-color: #000066;
+}
+
+/*ini buat logo*/
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center img {
+  height: auto;
+  justify-content: center;
+}
+
+/* item kanan */
+.right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+right img {
+  width: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000066;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #CB0E5D;
+}
+
+/*bagian isi*/ 
+
+.contact-us { grid-area: left;
+            text-align: left !important; 
+		    color: #000066;
+		    background-color: white;
+		    font-size: 48px;
+		    font-weight: 800;
+        	margin-left: 70px;
+            }
+
+.telp-email { grid-area: telp; 
+            text-align: left !important;
+		    color: #000066;
+		    background-color: white;
+		    font-size: 24px;
+	    	font-weight: 700;
+    		padding-top: 20px;
+       		margin-left: 70px;
+            }
+
+.data { grid-area: data; 
+        text-align: left !important;
+		color: #000066;
+	    background-color: white;
+	    font-size: 20px;
+	    font-weight: 700;
+		padding: 10px 10px 30px 30px;
+		margin-left: 100px;
+    	margin-right: 100px;
+		margin-top: 30px;
+		border: 1px solid #000066;
+		border-radius: 5px;
+		margin-bottom: 30px;
+        }
+
+label {
+	font-size: 16px;
+    opacity: 0.4;
+	}
+
+input, textarea {
+width: 1225px;
+margin: 10px auto;
+  box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #000066;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+input:focus, textarea:focus {
+	border: 1px solid #000066;
+	font-size: 16px;
+	}
+
+button {
+	width: 1225px;
+	height: 50px;
+	margin: 10px auto;
+	background-color: #CB0E5D;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	}
+	
+button:hover {
+	background-color: #000066;
+	}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.footer-logo { grid-area: footer-logo; 
+			text-align: center; 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #FFDEEB;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 0px;
+		}
+
+h1 {
+	font-size: 24px;
+	font-style: bold;
+	font-weight: 700;
+} 
+
+p {
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 700;
+}
+.footer-center { grid-area: footer-center; 
+			text-align: left;
+			font-size: 16px; 
+			color: #000066;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 0px;
+			background-color: #FFDEEB;
+		}
+
+.footer-center a:hover {
+  color: #CB0E5D;
+  cursor: pointer;
+}
+
+.footer-right { grid-area: footer-right; 
+			text-align: left;
+			font-size: 16px; 
+			color: #000066;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 0px;
+			background-color: #FFDEEB;
+		}
+
+.footer-right a:hover {
+  color: #CB0E5D;
+  cursor: pointer;
+} 
+
+
+	
+</style>
+</head>
+
+<body>
+	
+	 <header class="header">
+
+    <div class="topbar">
+      <div class="left">
+        <a href="#">ID </a>
+        <span class="divider"></span>
+        <a href="#"><strong>EN</strong></a>
+      </div>
+
+      <div class="center">
+        <a href="index.html"><img src="assets/pearlyii_logo_banner.png" alt="LOGO" title="Pearlyii_"></a>
+      </div>
+
+      <div class="right">
+        <span><img src="assets/search_icon.png" alt="search_icon" title="search"></span>
+        <span><img src="assets/heart_icon.png" alt="heart_icon" title="favorites"></span>
+        <span><img src="assets/cart_icon.png" alt="search_icon" title="cart"></span>
+        <span><img src="assets/profile_icon.png" alt="search_icon" title="my profile"></span>
+      </div>
+    </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="coming_soon.html">ABOUT</a>
+      <a href="coming_soon.html">PRODUCT</a>
+      <a href="coming_soon.html">SERIES</a>
+      <a href="custom.html">CUSTOM</a>
+      <a href="coming_soon.html">CONTACTS</a>
+    </nav>
+  </header> 
+
+
+	<div class="container">
+		<div class="contact-us">Contact Us</div>
+        <div class="telp-email">
+            <p>call support or whatsapp: +62 1234 5678 90</p>
+            <p>send an email: supports@pearlyii.com</p>
+        </div>
+		<div class="data">
+			<p>have a question?</p>
+			<form> 	
+			<textarea row="10" cols="30" placeholder="name:"></textarea><br>
+			<textarea row="10" cols="30" placeholder="email:"></textarea><br>
+			<textarea row="10" cols="30" placeholder="phone number:"></textarea><br>
+			<textarea row="10" cols="30" placeholder="description:"></textarea><br>
+			<button href="#">submit</button>
+			</form>
+		</div>
+
+
+
+		<div class="footer-logo"><img src="assets/pearlyii.png" width="300px"></div>
+
+	<div class="footer-center">
+			<h1>Customer Care</h1><br>
+			<p><a href="contactus.html">contact us</a></p>
+			<p><a href="privacypolicy.html">privacy policy</a></p>
+			<p><a href="FAQ.html">F.A.Q</a></p>
+			<p><a href="TNC.html">Terms & Conditions</a></p>
+	</div>
+
+	<div class="footer-right">
+            <h1>Information</h1><br>
+            <p><a href="sizechart.html">size chart</a></p>
+            <p><a href="jewelrycare.html">jewelry care</a></p>
+            <p>find us at</p>
+			<p><img src="assets/findus.png" width="100px"></p>      
+	</div>
+	</div>
+
+</body>
+</html>
