@@ -140,7 +140,7 @@ main {
   color: white;
 }
 
-/* Checkout Section*/
+/* Checkout */
 
 :root {
   --pink: #cb0e5d;
@@ -155,7 +155,7 @@ main {
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Base */
+/* Base Awal */
 html,
 body {
   width: 100%;
@@ -166,7 +166,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* page wrapper */
+/* jangan diutak atik ini Layout Checkout */
 .checkout-page {
   max-width: 1600px;
   margin: 0 auto;
@@ -228,14 +228,14 @@ body {
   align-items: start;
 }
 
-/* Left Column */
+/* Kiri Column */
 .checkout-left {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-/* Address Card */
+/* Bagian Alamat */
 .address-card {
   display: flex;
   align-items: flex-start;
@@ -369,7 +369,7 @@ body {
   background: var(--pink-pale);
 }
 
-/* Checkbox */
+/* Jangan diutak atik ini buat Checkbox */
 .item-check {
   position: relative;
   cursor: pointer;
@@ -523,7 +523,7 @@ body {
   background: var(--white);
 }
 
-/*Right Column*/
+/*kanan Column*/
 .checkout-right {
   display: flex;
   flex-direction: column;
@@ -754,7 +754,7 @@ body {
   color: #000066;
 }
 
-/* Checkout Button */
+/* Tombol Checkout */
 .checkout-btn {
   width: 100%;
   background: var(--pink);
@@ -776,7 +776,7 @@ body {
   box-shadow: 0 4px 16px rgba(203, 14, 93, 0.28);
 }
 
-/* Shimmer */
+/* Efek Animasi */
 .checkout-btn::before {
   content: "";
   position: absolute;
@@ -848,7 +848,7 @@ body {
   cursor: pointer;
 }
 
-/* Responsive */
+/* Test Responsive */
 @media (max-width: 860px) {
   .checkout-page {
     padding: 36px 28px 140px;
