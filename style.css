@@ -658,7 +658,7 @@ button:hover {
     color: #000066;
 }
 
-h3 {
+.footer-center h3, .footer-right h3 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
