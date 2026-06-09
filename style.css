@@ -672,8 +672,8 @@ h3 {
     color: #000066;
 }
 
-.footer-center a:hover,
-.footer-right a:hover {
+.footer-center p:hover,
+.footer-right p:hover {
     color: #CB0E5D;
     cursor: pointer;
 }
