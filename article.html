@@ -40,74 +40,108 @@
             background:#FEFBFE;
         }
 
-        /* HEADER */
+/* HEADER */
 
-        header{
-            width:100%;
-            background:#FEFBFE;
-            border-bottom:1px solid #FFDEEB;
+.header{
+    width:100%;
+    background:#FEFBFE;
+    border-bottom:1px solid #FFDEEB;
 
-            position:fixed;
-            top:0;
-            left:0;
-            z-index:999;
-        }
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
 
-        /* TOP HEADER */
+/* TOPBAR */
 
-        .top-header{
-            width:100%;
-            max-width:1200px;
+.topbar{
+    width:100%;
+    max-width:1200px;
 
-            margin:auto;
-            padding:15px 40px;
+    margin:auto;
+    padding:15px 40px;
 
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        /* LANGUAGE */
+/* LANGUAGE */
 
-        .language{
-            font-size:14px;
-            font-weight:600;
-            color:#000066;
-        }
+.left{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
 
-        /* LOGO */
+.left a{
+    text-decoration:none;
+    color:#000066;
+    font-size:14px;
+    font-weight:600;
+}
 
-        .logo img{
-            width:170px;
-            height:auto;
-            display:block;
-        }
+.divider{
+    width:1px;
+    height:14px;
+    background:#000066;
+}
 
-        /* ICON */
+/* LOGO */
 
-        .header-icons{
-            display:flex;
-            align-items:center;
-            gap:22px;
-        }
+.center img{
+    width:170px;
+    display:block;
+}
 
-        .header-icons a{
-            color:#000066;
-            font-size:22px;
+/* ICON */
 
-            transition:0.3s;
-        }
+.right{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
 
-        .header-icons a:hover{
-            color:#CB0E5D;
-        }
+.right img{
+    width:22px;
+    height:22px;
+    transition:0.3s;
+}
 
-        /* NAVBAR */
+.right img:hover{
+    transform:scale(1.1);
+}
 
-        nav{
-            width:100%;
-            border-top:1px solid #FFDEEB;
-        }
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    border-top:1px solid #FFDEEB;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:45px;
+
+    padding:18px 0;
+
+    position:relative;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#000066;
+
+    font-size:16px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#CB0E5D;
+}
 
         .menu{
             width:100%;
@@ -316,6 +350,40 @@
             margin-bottom:18px;
         }
 
+        .dropdown_product,
+.dropdown_series{
+    position:relative;
+}
+
+.dropdown_product_content,
+.dropdown_series_content{
+    display:none;
+
+    position:absolute;
+    top:100%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:white;
+    min-width:180px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    z-index:1000;
+}
+
+.dropdown_product_content a,
+.dropdown_series_content a{
+    display:block;
+    padding:12px 15px;
+    font-size:14px;
+}
+
+.dropdown_product:hover .dropdown_product_content,
+.dropdown_series:hover .dropdown_series_content{
+    display:block;
+}
         /* FORM */
 
         .subscribe-form{
@@ -484,52 +552,79 @@
 <body>
 
     <!-- Header -->
+    <header class="header">
 
-    <header>
+        <div class="topbar">
 
-        <div class="top-header">
-
-            <div class="language">
-                ID | EN
+            <div class="left">
+                <a href="#">ID</a>
+                <span class="divider"></span>
+                <a href="#"><strong>EN</strong></a>
             </div>
 
-            <div class="logo">
-                <img src="logonew.png" alt="Pearlyii Logo">
+            <div class="center">
+                <a href="index.html">
+                    <img src="assets/pearlyii_logo_banner.png" alt="LOGO">
+                </a>
             </div>
 
-            <div class="header-icons">
+            <div class="right">
 
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
+                <span>
+                    <img src="assets/search_icon.png" alt="">
+                </span>
 
-                <a href="#">
-                    <i class="fa-regular fa-heart"></i>
-                </a>
+                <span>
+                    <a href="wishlist.html">
+                        <img src="assets/heart_icon.png" alt="">
+                    </a>
+                </span>
 
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+                <span>
+                    <a href="cart.html">
+                        <img src="assets/cart_icon.png" alt="">
+                    </a>
+                </span>
 
-                <a href="#">
-                    <i class="fa-regular fa-user"></i>
-                </a>
+                <span>
+                    <a href="login.html">
+                        <img src="assets/profile_icon.png" alt="">
+                    </a>
+                </span>
 
             </div>
 
         </div>
 
-        <nav>
+        <nav class="navbar">
 
-            <ul class="menu">
+            <a href="about.html">ABOUT</a>
 
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">SERIES</a></li>
-                <li><a href="#">CUSTOM</a></li>
-                <li><a href="#">CONTACTS</a></li>
+            <div class="dropdown_product">
+                <a href="#">PRODUCT</a>
 
-            </ul>
+                <div class="dropdown_product_content">
+                    <a href="bestseller.html">Best Seller</a>
+                    <a href="necklace.html">Necklaces</a>
+                    <a href="bracelets.html">Bracelets</a>
+                    <a href="rings.html">Rings</a>
+                    <a href="phonestrap.html">Phonestraps</a>
+                </div>
+            </div>
+
+            <div class="dropdown_series">
+                <a href="#">SERIES</a>
+
+                <div class="dropdown_series_content">
+                    <a href="series_valentine.html">Valentine</a>
+                    <a href="series_couple.html">Couple</a>
+                    <a href="series_besties.html">Besties</a>
+                    <a href="product-grid.html">NEW</a>
+                </div>
+            </div>
+
+            <a href="custom.html">CUSTOM</a>
+            <a href="contactus.html">CONTACTS</a>
 
         </nav>
 
