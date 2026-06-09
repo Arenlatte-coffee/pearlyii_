@@ -664,6 +664,7 @@ button:hover {
     font-size: 24px !important;
     font-weight: 700;
     margin-bottom: 15px;
+	text-align: left !important;
 }
 
 .footer-center p,
