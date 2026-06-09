@@ -265,21 +265,28 @@ h1 {
 .product-card {
 	position: relative;
 	flex: 1;
+	width: 350px;
 }
 
-.product-card img {
+.product-card-img {
 	position: relative;
 	width: 100%;
-	inset: 0;
+	height: 380px;
+	overflow: hidden;
+}
+
+.product-card-img img {
+	position: absolute;
+	width: 100%;
+	height: 380px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	transition: opacity 0.4s ease;
 }
 
-.product-card-img {
-	position: absolute;
-	width: 100%;
-	height: 380px;
-}
 
 .img-hover {
 	opacity: 0;
