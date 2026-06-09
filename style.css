@@ -672,8 +672,8 @@ h3 {
     color: #000066;
 }
 
-.footer-center p:hover,
-.footer-right p:hover {
+.footer-center a:hover,
+.footer-right a:hover {
     color: #CB0E5D;
     cursor: pointer;
 }
@@ -794,9 +794,6 @@ media (max-width: 1024px) {
     }
 
     /* FOOTER */
-
-	a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
 		
     .tagline-section {
         padding: 80px 20px;
