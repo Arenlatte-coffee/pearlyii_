@@ -275,6 +275,7 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   padding: 0;
+  
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
