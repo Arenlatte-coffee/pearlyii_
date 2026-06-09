@@ -794,6 +794,10 @@ media (max-width: 1024px) {
     }
 
     /* FOOTER */
+
+	a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+		
     .tagline-section {
         padding: 80px 20px;
     }
