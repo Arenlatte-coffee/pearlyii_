@@ -302,28 +302,66 @@ a {
 }
 
 .quantity-control {
-  width: 110px;
+  width: fit-content;
   min-height: 38px;
+
   justify-self: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   align-items: center;
-  background: var(--pink-light);
-  color: var(--navy);
-  font-weight: 600;
+
+  border: 1.5px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+
+  background: var(--white);
 }
 
 .quantity-control button {
+  width: 32px;
   height: 38px;
-  border: 0;
-  background: transparent;
+  border: none;
+  background: #f5f5f8;
   color: var(--navy);
-  font-size: 0.85rem;
+
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s var(--ease-spring);
+}
+
+.quantity-control button:hover {
+  background: var(--pink);
+  color: var(--white);
+  transform: scale(1.08);
+}
+
+.quantity-control button:active {
+  transform: scale(0.88);
 }
 
 .quantity-control span {
-  text-align: center;
+  width: 36px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1.5px solid var(--border);
+  border-right: 1.5px solid var(--border);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  background: var(--white);
 }
 
 .cart-actions {
