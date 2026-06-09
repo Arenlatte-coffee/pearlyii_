@@ -317,6 +317,33 @@ h1 {
 	box-shadow: 0 10px 24px rgba(0, 0, 102, 0.25);
 }
 
+.product-card h3 {
+	margin-top: 15px;
+	margin-bottom: 2px;
+	font-size: 20px;
+	color: #000066;
+	line-height: 1.4;
+	font-weight: normal;
+}
+
+.price-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price-row p {
+	font-weight: bold;
+	font-size: 30px;
+	color: #000066;
+}
+
+.price-row span {
+	color: #CE1965;
+	font-size: 35px;
+	cursor: pointer;
+}
+
 .nav {
 	background: none;
 	border: none;
