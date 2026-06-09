@@ -209,7 +209,7 @@ a {
   padding: 24px 34px;
   border: 2px solid var(--border-pink);
   border-radius: 6px;
-  background: var(--pink-pale);
+  background: var(--white);
 }
 
 .cart-check {
@@ -271,7 +271,7 @@ a {
   height: 128px;
   border: 2px solid var(--border-pink);
   border-radius: 5px;
-  background: var(--pink-light);
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
