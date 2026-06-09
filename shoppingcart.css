@@ -635,4 +635,19 @@ a {
   .cart-actions {
     width: 100%;
   }
+  /* QTY BOX */
+  .quantity-control {
+    width: fit-content;
+    min-height: 36px;
+  }
+  .quantity-control button {
+    width: 28px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+  .quantity-control span {
+    width: 32px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
 }
